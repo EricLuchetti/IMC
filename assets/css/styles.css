@@ -1,0 +1,15 @@
+body {
+    max-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    margin: auto;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+*, #resultado, #calcular {
+    max-width: 100%;
+    position: relative;
+    text-align: center;
+    margin: auto;
+}

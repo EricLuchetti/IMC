@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Cálculo de IMC</title>
+</head>
+<header>
+    <h1>Informe o seu peso e altura</h1>
+    Peso (Quilo) 
+    <br>
+    <input type="number" id="peso"> Kg
+    <br>
+    <br>
+    Altura (Centímetros) 
+    <br>
+    <input type="number" id="altura"> cm
+    <br>
+    <br>
+    <button type="button" id="calcular" onclick="calcular()">Calcular IMC</button>
+</header>
+
+<body>
+    <br>
+    <br>
+    <div>
+
+        <table id="table" class="table">
+            <thead>
+                <tr class="alert alert-secondary" role="alert">
+                    <th>IMC</th>
+                    <th>Classificação</th>
+                    <th>Obesidade (Grau)</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr class="alert alert-primary" role="alert">
+                    <td>Menor que 18,5</td>
+                    <td>Magreza</td>
+                    <th>0</th>
+                </tr>
+
+                <tr class="alert alert-success" role="alert">
+                    <td>Entre 18,5 e 24,9</td>
+                    <td>Normal</td>
+                    <th>0</th>
+                </tr>
+
+                <tr class="alert alert-dark" role="alert">
+                    <td>Entre 25,0 e 29,9</td>
+                    <td>Sobrepeso</td>
+                    <th>I</th>
+                </tr>
+
+                <tr class="alert alert-warning" role="alert">
+                    <td>Entre 30,0 e 39,9</td>
+                    <td>Obesidade</td>
+                    <th>II</th>
+                </tr>
+
+                <tr class="alert alert-danger" role="alert">
+                    <td>Maior que 40,0</td>
+                    <td>Obesidade Grave</td>
+                    <th>III</th>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <br>
+    <div class="row" id="resultado"></div>
+    <br>
+    <div class="row" id="alerta" style="margin-right: 5px; margin-left: 1px;"></div>
+
+    <script src="./assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
